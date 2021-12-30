@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+/* navbar stying */
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 30px 0;
+   /* background-color: rgb(122, 74, 55); */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    color: wheat;
+    font-size: 75px;
+    font-weight: 700;
+    font-family: 'Cutive Mono', monospace;
+    font-family: 'MonteCarlo', cursive;
+    font-family: 'Waterfall', cursive;
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a{
+    color: rgb(105, 62, 27);
+    font-size: 18px;
+    font-weight: 900;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover{
+    color: rgb(231, 184, 190);
+}
+
+/* home section styling  */
+.home{
+    display: flex;
+    background: url(images/background.jpg) no-repeat center;
+    height: 100vh;
+    background-size: cover;
+    color: rgb(102, 53, 20);
+    min-height: 500px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content .text-1{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 700;
+    margin-left: -3px;
+    font-family: 'Cutive Mono', monospace;
+    font-family: 'Kalam', cursive;
+    font-family: 'MonteCarlo', cursive;
+    font-family: 'Tangerine', cursive;
+    font-family: 'The Nautigal', cursive;
+    font-family: 'Waterfall', cursive;
+    color: rgb(70, 77, 48);
+}    
+
+.home .home-content .text-3{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+/*-- responsive media query start */
+@media(max-width: 531px){
+    .max-width{
+        padding: 0 50px;
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background: rgb(228, 167, 118);
+        text-align: center;
+        padding-top: 80px;    
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+}
