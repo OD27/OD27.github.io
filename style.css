@@ -55,7 +55,7 @@
 /* home section styling  */
 .home{
     display: flex;
-    background: url(.images/background.jpg) no-repeat center;
+    background: url(images/background.jpg) no-repeat center;
     height: 100vh;
     background-size: cover;
     color: rgb(102, 53, 20);
@@ -88,5 +88,6 @@
 .home .home-content .text-3{
     font-size: 30px;
     font-weight: bold;
-    margin: 5px 0;
+    margin: 5px 0px;
 }
+
