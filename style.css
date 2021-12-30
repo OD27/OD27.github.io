@@ -1,98 +1,117 @@
 *{
     margin: 0;
-    padding: 0;  /* providing default margin and padding to be 0 */
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
-/* home page styling */
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
 
-.homePage{                                      /* selecting div with class "homePage" and adding styling to it */
-    display: flex;                              /* creating a flex box */
-    justify-content: space-around;   
-    height: 100vh;
+/* navbar stying */
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 30px 0;
+   /* background-color: rgb(122, 74, 55); */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.navbar .max-width{
+    display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
-.myImage img{                                  /* selecting div with class "myImage" then navigating to img tag inside it, and adding styling to it */
-    height: 18rem;
-    width: auto;
-    border-radius: 1rem;
+.navbar .logo a{
+    color: wheat;
+    font-size: 75px;
+    font-weight: 700;
+    font-family: 'Cutive Mono', monospace;
+    font-family: 'MonteCarlo', cursive;
+    font-family: 'Waterfall', cursive;
 }
 
-.name{                                         /* selecting div with class "name" and adding styling to it */
-    font-size: 3rem; 
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
 }
 
-.intro p{                                      /* selecting div with class "intro" then navigating to p tag inside it, and adding styling to it */
-    font-size: 2rem;
-    line-height: 3rem;
+.navbar .menu li a{
+    color: rgb(105, 62, 27);
+    font-size: 18px;
+    font-weight: 900;
+    margin-left: 25px;
+    transition: color 0.3s ease;
 }
 
-.your_button{                                  /* selecting button with class "your_button" and adding styling to it */
-    font-size: 1rem;
-    padding: 5px;
-    cursor: pointer;
-    background-color: rgb(42, 42, 255);
-    border-radius: 5px;
-    width:100px;
-    height:50px;
-    border:2px solid white;
-    color:white;
-    text-transform: capitalize;
-}
-.your_button:hover{                           /* here we add a special animation to button when it is hovered (hover: when a cursor roams in the specified setion it is the hover state for that element) */
-   
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-}
-/* about me */
-.about{                                       /* selecting div with class "about" and adding styling to it */
-    min-height: 60vh;
+.navbar .menu li a:hover{
+    color: rgb(231, 184, 190);
 }
 
-.about_heading{                               /* selecting div with class "about_heading" and adding styling to it */
-    font-size: 3rem;
-    text-align: center;
-    text-decoration: underline;
-    font-weight:600;
+/* home section styling  */
+.home{
+    display: flex;
+    background: url(images/background.jpg) no-repeat center;
+    height: 100vh;
+    background-size: cover;
+    color: rgb(102, 53, 20);
+    min-height: 500px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-/* contact */
-.contact_sec{                                /* selecting div with class "contact_sec" and adding styling to it */
-    height: 60vh;
-    width:70vw;
-    margin: 0 auto;
+.home .max-width{
+    margin: auto 0 auto 40px;
 }
 
-.contact_heading{                            /* selecting div with class "contact_heading" and adding styling to it */
-    font-weight:600;
-    font-size: 3rem;
-    text-align: center;
-    text-decoration: underline;
+.home .home-content .text-1{
+    font-size: 25px;
+    font-weight: bold;
 }
 
-.contact_info{                               /* selecting div with class "contact_info" and adding styling to it */
-    font-size:1.3em;
-    font-weight: 600;
-    margin-top:10vh;
-}
-.data{                                       /* selecting div with class "data" and adding styling to it */
-    font-weight:initial;
-}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 700;
+    margin-left: -3px;
+    font-family: 'Cutive Mono', monospace;
+    font-family: 'Kalam', cursive;
+    font-family: 'MonteCarlo', cursive;
+    font-family: 'Tangerine', cursive;
+    font-family: 'The Nautigal', cursive;
+    font-family: 'Waterfall', cursive;
+    color: rgb(70, 77, 48);
+}    
 
-.Email,.mobile_no,.linkdin,.github,.others{ /* selecting many divs with the class listed and adding same styling to all of them */
-    padding:2vh 0;
-}
-
-span a{                                     /* selecting span and then navigating to a tag in it and adding styling to it */
-    color:black;
-}
-
-span a:hover{                               /* here we add a special animation to anchor tag when it is hovered (hover: when a cursor roams in the specified setion it is the hover state for that element) */
-    color:blue;
+.home .home-content .text-3{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 5px 0;
 }
 
-
-.para{                                      /* selecting div with class "para" and adding styling to it */
-    width:70vw; 
-    margin:8vh auto;
-    font-size: 2em;
+/*-- responsive media query start */
+@media(max-width: 531px){
+    .max-width{
+        padding: 0 50px;
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: 0;
+        top: 0;
+        background: rgb(228, 167, 118);
+        text-align: center;
+        padding-top: 80px;    
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
 }
