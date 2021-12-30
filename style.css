@@ -92,7 +92,7 @@
 }
 
 /*-- responsive media query start */
-@media(max-width: 531px){
+@media(max-width: 490px){
     .max-width{
         padding: 0 50px;
     }
