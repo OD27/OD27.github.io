@@ -55,7 +55,7 @@
 /* home section styling  */
 .home{
     display: flex;
-    background: url(images/background.jpg) no-repeat center;
+    background: url(.images/background.jpg) no-repeat center;
     height: 100vh;
     background-size: cover;
     color: rgb(102, 53, 20);
