@@ -91,27 +91,3 @@
     margin: 5px 0;
 }
 
-/*-- responsive media query start */
-@media(max-width: 489px){
-    .max-width{
-        padding: 0 50px;
-    }
-    .navbar .menu{
-        position: fixed;
-        height: 100vh;
-        width: 100%;
-        left: 0;
-        top: 0;
-        background: rgb(228, 167, 118);
-        text-align: center;
-        padding-top: 80px;    
-    }
-    .navbar .menu li{
-        display: block;
-    }
-    .navbar .menu li a{
-        display: inline-block;
-        margin: 20px 0;
-        font-size: 25px;
-    }
-}
