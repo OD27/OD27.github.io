@@ -15,7 +15,7 @@
 .navbar{
     position: fixed;
     width: 100%;
-    padding: 30px 0;
+    padding: 20px 0;
    /* background-color: rgb(122, 74, 55); */
     font-family: 'Courier New', Courier, monospace;
 }
@@ -27,9 +27,9 @@
 }
 
 .navbar .logo a{
-    color: wheat;
-    font-size: 75px;
-    font-weight: 700;
+    color: rgb(235, 191, 142);
+    font-size: 80px;
+    font-weight: 900;
     margin-left: -50px;
     font-family: 'Cutive Mono', monospace;
     font-family: 'MonteCarlo', cursive;
@@ -43,9 +43,10 @@
 
 .navbar .menu li a{
     color: rgb(105, 62, 27);
-    font-size: 18px;
-    font-weight: 900;
-    margin-left: 25px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 50px;
+    margin-right: auto;
     transition: color 0.3s ease;
 }
 
@@ -91,4 +92,169 @@
     font-weight: bold;
     margin: 5px 0px;
 }
+.home .wrapper{
+    margin-left: -680px;
+}
+.home .wrapper .button{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    float: left;
+    padding: 0;
+    margin: 650px 5px;
+    overflow: hidden;
+    background: rgb(214, 97, 97),;
+    border-radius: 40px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(255, 249, 249, 0.1);
+    transition: all 0.3s ease-out;
+  }
+.home .wrapper .button:hover{
+    width: 200px;
+  }
+.home .wrapper .button .icon{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    padding-left: -50px ;
+    text-align: center;
+    border-radius: 40px;
+    box-sizing: border-box;
+    line-height: 55px;
+    transition: all 0.3s ease-out;
+    color: rgb(214, 97, 97);
+  }
+.home .wrapper .button:nth-child(1):hover .icon{
+    background: rgb(102, 53, 20);
+  }
+.home .wrapper .button:nth-child(2):hover .icon{
+    background: rgb(102, 53, 20);
+  }  
+
+  .wrapper .button .icon i{
+    font-size: 35px;
+    line-height: 53px;
+    transition: all 0.3s ease-out;
+  }
+.home .wrapper .button:hover .icon i{
+    color: rgb(214, 97, 97);
+  }
+.home .wrapper .button span{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 33px;
+    margin-left: 10px;
+    transition: all 0.3s ease-out;
+  }
+.home .wrapper .button:nth-child(1) span{
+    color: rgb(102, 53, 20);
+  }
+.home .wrapper .button:nth-child(2) span{
+    color: rgb(102, 53, 20);
+  }  
+
+/* about section stying */
+.about{
+    display: flex;
+    height: 100vh;
+    background: url(./images/bg1.jpg) no-repeat;
+    background-size: cover;
+    min-height: 600px;
+    background-position: cover;
+}
+
+.about .max-width{
+    margin: auto 0 auto 40px;
+    justify-content: center;  
+}
+
+.about .container{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .container .left{
+    width: 50%;
+    height: 600px;
+    background: url(./images/about.jpg) no-repeat center / cover;
+    border-radius:  8px;
+    margin-left: -50px;
+    margin-top: 100px;
+    float: right;
+}
+
+.about .container .right{
+    width: 50%;
+    min-width: 400px;
+    background-color: rgb(228, 118, 98, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 40px;
+    border-radius: 8px;
+    color: rgb(243, 221, 197);
+    margin-left: -100px;
+    margin-top: 100px;
+}
+
+.about .container .right h1{
+    font-size: 100px;
+    font-weight: bold;
+    font-family: 'Cutive Mono', monospace;
+    font-family: 'Kalam', cursive;
+    font-family: 'MonteCarlo', cursive;
+    font-family: 'Pinyon Script', cursive;
+    font-family: 'Tangerine', cursive;
+    font-family: 'The Nautigal', cursive;
+    font-family: 'Waterfall', cursive;
+    margin-top: -50px;
+}
+
+.about .container .right p{
+    margin: 20px 0;
+    font-weight: 200;
+    line-height: 25px;
+}
+
+/* my artwork styling */
+.artwork{
+    display: flex;
+    height: 100vh;
+    background: url(./images/bg4.jpg) no-repeat;
+    background-size: cover;
+    min-height: 600px;
+    
+}
+
+.artwork .max-width {
+    width: 40%;
+    min-width: 100px;
+    background-color: rgba(226, 117, 84, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px;
+    border-radius: 8px;
+    color: rgb(238, 200, 156);
+    margin-left: center;
+    margin-top: 100px;
+}
+
+.artwork .max-width h1{
+    font-size: 80px;
+    font-weight: bold;
+    font-family: 'Cutive Mono', monospace;
+    font-family: 'Kalam', cursive;
+    font-family: 'MonteCarlo', cursive;
+    font-family: 'Pinyon Script', cursive;
+    font-family: 'Tangerine', cursive;
+    font-family: 'The Nautigal', cursive;
+    font-family: 'Waterfall', cursive;
+    justify-content: center;
+}
+ 
 
