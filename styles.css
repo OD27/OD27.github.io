@@ -315,3 +315,13 @@
     margin-left: 0;
 }
 
+.artwork .end figcaption{
+    width: 200%;
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    font-weight: 900;
+    color: rgb(175, 57, 57);
+    text-align: bottom;
+    padding-top: 690px;
+}
