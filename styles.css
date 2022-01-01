@@ -220,7 +220,7 @@
     line-height: 25px;
 }
 
-/* my artwork styling */
+/* my artwork syling */
 .artwork{
     display: flex;
     height: 100vh;
@@ -267,15 +267,15 @@
 }
 
 .artwork .container .img1{
-    width: 25%;
+    width: 30%;
     height: 450px;
     background: url(./images/art1.jpeg) no-repeat left/ cover;
     margin-bottom: -200px;
-    margin-left: -520px;
+    margin-left: -680px;
 }
 
 .artwork .container .img2{
-    width: 25%;
+    width: 30%;
     height: 450px;
     background: url(./images/art2.jpeg) no-repeat left/ cover;
     margin-bottom: -200px;
@@ -284,7 +284,7 @@
 }
 
 .artwork .container .img3{
-    width: 25%;
+    width: 35%;
     min-height: 450px;
     background: url(./images/art3.jpeg) no-repeat left/ cover;
     margin-bottom: -200px;
@@ -293,14 +293,14 @@
 }
 
 .artwork .container .img4{
-    width: 25%;
+    width: 28%;
     min-height: 450px;
     background: url(./images/art4.jpeg) no-repeat left/ cover;
     margin-bottom: -200px;
     margin-left: 0;
 }
 .artwork .container .img5{
-    width: 25%;
+    width: 27%;
     min-height: 450px;
     background: url(./images/art5.jpeg) no-repeat left/ cover;
     margin-bottom: -200px;
@@ -308,7 +308,7 @@
 }
 
 .artwork .container .img6{
-    width: 25%;
+    width: 30%;
     min-height: 450px;
     background: url(./images/art6.jpeg) no-repeat left/ cover;
     margin-bottom: -200px;
